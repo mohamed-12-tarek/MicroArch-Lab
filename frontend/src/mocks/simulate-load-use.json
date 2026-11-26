@@ -1,0 +1,640 @@
+{
+  "success": true,
+  "total_cycles": 9,
+  "stall_count": 1,
+  "forward_count": 2,
+  "instructions": [
+    {
+      "instruction_id": 0,
+      "opcode": "ADDI",
+      "rd": "R1",
+      "rs1": "R0",
+      "rs2": null,
+      "immediate": 40,
+      "line_number": 1,
+      "raw": "ADDI R1, R0, 40",
+      "text": "ADDI R1, R0, 40"
+    },
+    {
+      "instruction_id": 1,
+      "opcode": "SW",
+      "rd": null,
+      "rs1": "R0",
+      "rs2": "R1",
+      "immediate": 0,
+      "line_number": 2,
+      "raw": "SW R1, 0(R0)",
+      "text": "SW R1, 0(R0)"
+    },
+    {
+      "instruction_id": 2,
+      "opcode": "LW",
+      "rd": "R2",
+      "rs1": "R0",
+      "rs2": null,
+      "immediate": 0,
+      "line_number": 3,
+      "raw": "LW R2, 0(R0)",
+      "text": "LW R2, 0(R0)"
+    },
+    {
+      "instruction_id": 3,
+      "opcode": "ADD",
+      "rd": "R3",
+      "rs1": "R2",
+      "rs2": "R0",
+      "immediate": null,
+      "line_number": 4,
+      "raw": "ADD R3, R2, R0",
+      "text": "ADD R3, R2, R0"
+    }
+  ],
+  "history": [
+    {
+      "cycle": 1,
+      "stages": {
+        "IF": {
+          "instruction_id": 0,
+          "text": "ADDI R1, R0, 40",
+          "stalled": false
+        },
+        "ID": null,
+        "EX": null,
+        "MEM": null,
+        "WB": null
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {},
+      "completed": 0,
+      "stall": null
+    },
+    {
+      "cycle": 2,
+      "stages": {
+        "IF": {
+          "instruction_id": 1,
+          "text": "SW R1, 0(R0)",
+          "stalled": false
+        },
+        "ID": {
+          "instruction_id": 0,
+          "text": "ADDI R1, R0, 40",
+          "stalled": false
+        },
+        "EX": null,
+        "MEM": null,
+        "WB": null
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {},
+      "completed": 0,
+      "stall": null
+    },
+    {
+      "cycle": 3,
+      "stages": {
+        "IF": {
+          "instruction_id": 2,
+          "text": "LW R2, 0(R0)",
+          "stalled": false
+        },
+        "ID": {
+          "instruction_id": 1,
+          "text": "SW R1, 0(R0)",
+          "stalled": false
+        },
+        "EX": {
+          "instruction_id": 0,
+          "text": "ADDI R1, R0, 40",
+          "stalled": false
+        },
+        "MEM": null,
+        "WB": null
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {},
+      "completed": 0,
+      "stall": null
+    },
+    {
+      "cycle": 4,
+      "stages": {
+        "IF": {
+          "instruction_id": 3,
+          "text": "ADD R3, R2, R0",
+          "stalled": false
+        },
+        "ID": {
+          "instruction_id": 2,
+          "text": "LW R2, 0(R0)",
+          "stalled": false
+        },
+        "EX": {
+          "instruction_id": 1,
+          "text": "SW R1, 0(R0)",
+          "stalled": false
+        },
+        "MEM": {
+          "instruction_id": 0,
+          "text": "ADDI R1, R0, 40",
+          "stalled": false
+        },
+        "WB": null
+      },
+      "forwards": [
+        {
+          "register": "R1",
+          "from_stage": "MEM",
+          "from_instruction": 0,
+          "to_instruction": 1
+        }
+      ],
+      "registers": {
+        "R0": 0,
+        "R1": 0,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {},
+      "completed": 0,
+      "stall": null
+    },
+    {
+      "cycle": 5,
+      "stages": {
+        "IF": null,
+        "ID": {
+          "instruction_id": 3,
+          "text": "ADD R3, R2, R0",
+          "stalled": true
+        },
+        "EX": {
+          "instruction_id": 2,
+          "text": "LW R2, 0(R0)",
+          "stalled": false
+        },
+        "MEM": {
+          "instruction_id": 1,
+          "text": "SW R1, 0(R0)",
+          "stalled": false
+        },
+        "WB": {
+          "instruction_id": 0,
+          "text": "ADDI R1, R0, 40",
+          "stalled": false
+        }
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 40,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {
+        "0": 40
+      },
+      "completed": 1,
+      "stall": {
+        "instruction_id": 3,
+        "register": "R2",
+        "reason": "Load-use hazard on R2: instruction 2 (LW R2, 0(R0)) is in EX"
+      }
+    },
+    {
+      "cycle": 6,
+      "stages": {
+        "IF": null,
+        "ID": {
+          "instruction_id": 3,
+          "text": "ADD R3, R2, R0",
+          "stalled": false
+        },
+        "EX": null,
+        "MEM": {
+          "instruction_id": 2,
+          "text": "LW R2, 0(R0)",
+          "stalled": false
+        },
+        "WB": {
+          "instruction_id": 1,
+          "text": "SW R1, 0(R0)",
+          "stalled": false
+        }
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 40,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {
+        "0": 40
+      },
+      "completed": 2,
+      "stall": null
+    },
+    {
+      "cycle": 7,
+      "stages": {
+        "IF": null,
+        "ID": null,
+        "EX": {
+          "instruction_id": 3,
+          "text": "ADD R3, R2, R0",
+          "stalled": false
+        },
+        "MEM": null,
+        "WB": {
+          "instruction_id": 2,
+          "text": "LW R2, 0(R0)",
+          "stalled": false
+        }
+      },
+      "forwards": [
+        {
+          "register": "R2",
+          "from_stage": "WB",
+          "from_instruction": 2,
+          "to_instruction": 3
+        }
+      ],
+      "registers": {
+        "R0": 0,
+        "R1": 40,
+        "R2": 40,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {
+        "0": 40
+      },
+      "completed": 3,
+      "stall": null
+    },
+    {
+      "cycle": 8,
+      "stages": {
+        "IF": null,
+        "ID": null,
+        "EX": null,
+        "MEM": {
+          "instruction_id": 3,
+          "text": "ADD R3, R2, R0",
+          "stalled": false
+        },
+        "WB": null
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 40,
+        "R2": 40,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {
+        "0": 40
+      },
+      "completed": 3,
+      "stall": null
+    },
+    {
+      "cycle": 9,
+      "stages": {
+        "IF": null,
+        "ID": null,
+        "EX": null,
+        "MEM": null,
+        "WB": {
+          "instruction_id": 3,
+          "text": "ADD R3, R2, R0",
+          "stalled": false
+        }
+      },
+      "forwards": [],
+      "registers": {
+        "R0": 0,
+        "R1": 40,
+        "R2": 40,
+        "R3": 40,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 0,
+        "R8": 0,
+        "R9": 0,
+        "R10": 0,
+        "R11": 0,
+        "R12": 0,
+        "R13": 0,
+        "R14": 0,
+        "R15": 0,
+        "R16": 0,
+        "R17": 0,
+        "R18": 0,
+        "R19": 0,
+        "R20": 0,
+        "R21": 0,
+        "R22": 0,
+        "R23": 0,
+        "R24": 0,
+        "R25": 0,
+        "R26": 0,
+        "R27": 0,
+        "R28": 0,
+        "R29": 0,
+        "R30": 0,
+        "R31": 0
+      },
+      "memory": {
+        "0": 40
+      },
+      "completed": 4,
+      "stall": null
+    }
+  ],
+  "final_state": {
+    "registers": {
+      "R0": 0,
+      "R1": 40,
+      "R2": 40,
+      "R3": 40,
+      "R4": 0,
+      "R5": 0,
+      "R6": 0,
+      "R7": 0,
+      "R8": 0,
+      "R9": 0,
+      "R10": 0,
+      "R11": 0,
+      "R12": 0,
+      "R13": 0,
+      "R14": 0,
+      "R15": 0,
+      "R16": 0,
+      "R17": 0,
+      "R18": 0,
+      "R19": 0,
+      "R20": 0,
+      "R21": 0,
+      "R22": 0,
+      "R23": 0,
+      "R24": 0,
+      "R25": 0,
+      "R26": 0,
+      "R27": 0,
+      "R28": 0,
+      "R29": 0,
+      "R30": 0,
+      "R31": 0
+    },
+    "memory": {
+      "0": 40
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "engine": "real"
+}

@@ -1,1 +1,21 @@
-{}
+{
+  "success": false,
+  "total_cycles": 0,
+  "stall_count": 0,
+  "forward_count": 0,
+  "instructions": [],
+  "history": [],
+  "final_state": {
+    "registers": {},
+    "memory": {}
+  },
+  "errors": [
+    {
+      "line": 2,
+      "message": "Unsupported instruction: MULT",
+      "type": "parse"
+    }
+  ],
+  "warnings": [],
+  "engine": "real"
+}
