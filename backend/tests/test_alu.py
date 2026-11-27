@@ -1,6 +1,3 @@
-# owner: M3
-# ALU tests
-
 import pytest
 
 from app.core.alu import ALU

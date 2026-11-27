@@ -1,7 +1,3 @@
-# owner: M3
-# RegisterFile (32 regs, R0 = 0)
-
-
 class RegisterFile:
 
     def __init__(self):

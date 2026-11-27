@@ -1,6 +1,3 @@
-# owner: M3
-# ControlSignals + ControlUnit
-
 from dataclasses import dataclass
 from typing import Optional
 

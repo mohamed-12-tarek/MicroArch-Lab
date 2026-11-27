@@ -1,6 +1,3 @@
-# owner: M3
-# Control unit tests
-
 import pytest
 
 from app.core.control_unit import ControlUnit, ControlSignals
