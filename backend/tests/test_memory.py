@@ -1,7 +1,3 @@
-# owner: M3
-# Memory tests
-
-
 import pytest
 
 from app.core.memory import DataMemory

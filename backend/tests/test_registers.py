@@ -1,7 +1,3 @@
-# owner: M3
-# Register file tests
-
-
 import pytest
 from app.core.registers import RegisterFile
 
